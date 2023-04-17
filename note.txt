@@ -1,0 +1,7 @@
+music1 : anh khac hay em khac
+music2: anh nhan ra
+music3: chi anh hieu em
+music4: ngo
+music5: quen
+music6: yeu
+music7: yeu lai tu dau

@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* max-width: 480px; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#music{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboard{
+    width: 99%;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(224, 225, 240);
+    z-index: 1;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+header{
+    flex: 1;
+}
+
+#head>div{
+    display: flex;
+    align-items: center;
+}
+
+.head-icon{
+    padding: 16px;
+    font-size: 24px !important;
+}
+
+#head h4{
+    opacity: 0.5;
+}
+
+.red-icon{
+    color: crimson;
+}
+
+#CD{
+
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background: url(./img/backgr.jpg) no-repeat center/ cover;
+}
+
+#cd-thumb{
+    width: 80%;
+    max-width: 220px;
+    margin: auto;
+}
+
+#cd-thumb>img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+#control{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fa.fa-pause-circle.play{
+    display: inline-block !important;
+}
+
+.fa.fa-play-circle.play{
+    display: inline-block !important;
+}
+#control .btn i{
+    font-size: 20px;
+    opacity: 0.5;
+    padding: 0 24px;
+} 
+
+.main-icon .fa{
+    font-size: 60px !important;
+    opacity: 1;
+}
+
+#progress{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.square{
+    height: 12px;
+    border-radius: 5px;
+    -webkit-appearance: none; /* loại bỏ thiết kế mặc định của trình duyệt */
+    background-color: rgb(188, 191, 218);
+}
+
+.square::-webkit-slider-thumb {
+    -webkit-appearance: none; /* loại bỏ thiết kế mặc định của trình duyệt */
+    width: 8px;
+    height: 24px;
+    border-radius: none;
+    background-color: rgb(189, 54, 54);
+    box-shadow: 0 0 3px rgba(191, 195, 214, 0.5);
+    transform: translateY(-6px);
+}
+
+#playlist{
+    margin-top: 450px;
+    width: 90%;
+    padding-bottom: 100px;
+}
+
+.song{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border: 1px solid rgb(213, 215, 230);
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 3px rgba(191, 195, 214, 0.5);
+    margin-bottom: 10px;
+}
+
+.song.active{
+    background-color: aliceblue;
+}
+
+.thumb{
+    height:90%;
+    margin-right: 10px;
+}
+.song img{
+    height: 100%;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.content h3{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.content p{
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.song .content{
+    flex: 1;
+    font-weight: bold;
+}
+
+.song:active{
+    opacity: 0.7;
+}
+
+.options{
+    
+}
+
+.options i{
+    font-size: 24px;
+    opacity: 0.5;
+    padding: 0 20px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(43, 36, 83);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    padding: 2px 30px;
+}
+
+.btnFooter{
+    opacity: 0.6;
+}
+
+.playF{
+    font-size: 40px !important;
+}
+
+
+.fa.fa-pause-circle{
+    display: none ;
+}
+
+.fa.fa-play-circle{
+    display: none ;
+}
+
+.volum{
+    width: 100px !important;
+    border-radius: 5px;
+}
+
+.volum::-webkit-slider-thumb {
+    -webkit-appearance: none; /* loại bỏ thiết kế mặc định của trình duyệt */
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: rgb(235, 51, 51);
+    box-shadow: 0 0 3px rgba(220, 221, 228, 0.5);
+    transform: translateY(-1px);
+}
+
+.volum::-webkit-slider-runnable-track , .square::-webkit-slider-runnable-track {
+    height: 12px;
+    border-radius: 5px;
+    -webkit-appearance: none; /* loại bỏ thiết kế mặc định của trình duyệt */
+    background-color: rgb(188, 191, 218);
+    background: linear-gradient(to right, rgba(12, 17, 56, 0.5) 0%, rgba(231, 232, 236, 0.5) calc(var(--value) * 1%), #ddd calc(var(--value) * 1%), #ddd 100%);
+    border: 0.5px solid rgb(202, 150, 150);
+}
+
+i:hover{
+    opacity: 0.4;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
